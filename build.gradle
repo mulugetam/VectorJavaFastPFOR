@@ -1,0 +1,25 @@
+// Copyright (C) 2022 Intel Corporation
+
+// SPDX-License-Identifier: Apache-2.0
+plugins {
+   id 'java-library'
+   id 'de.jjohannes.extra-java-module-info' version "0.6"
+}
+
+description = 'A Vector implementation of JavaFastPFOR'
+
+version = '1.0.0'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'me.lemire.integercompression:JavaFastPFOR:0.1.12'
+}
+
+extraJavaModuleInfo {
+  module("JavaFastPFOR-0.1.12.jar","me.lemire.integercompression", "0.1.12")  {
+    exports("me.lemire.integercompression")
+  }
+}

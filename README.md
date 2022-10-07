@@ -3,9 +3,9 @@ A vector implementation for the JavaFastPFOR Algorithm
 This project offers a vector implementation for Lemire's [JavaFastPFOR](https://github.com/lemire/JavaFastPFOR) integer compression algorithm based on ``jdk.incubator.vector``. 
 
 The implementation offers three classes:
-1. VectorBitPacker -- a vectorized implementation of bit packing mirroring [BitPacking.java](https://github.com/lemire/JavaFastPFOR/blob/master/src/main/java/me/lemire/integercompression/BitPacking.java).
-2. VectorBitPackerTerse -- a shorter version of VectorBitPacker but with more branch instructions (and less efficient).
-3. VectorFastPFOR -- is the vector equivalent for [FastPFOR](https://github.com/lemire/JavaFastPFOR/blob/master/src/main/java/me/lemire/integercompression/FastPFOR.java). Uses a 256 BLOCK_SIZE.
+1. ``VectorBitPacker`` -- a vectorized implementation of bit packing mirroring[BitPacking.java](https://github.com/lemire/JavaFastPFOR/blob/master/src/main/java/me/lemire/integercompression/BitPacking.java). Auto-generated from ``VectorBitPackerTerse``. Uses less branch instructions and is recommended for use.
+2. ``VectorBitPackerTerse`` -- a shorter version of VectorBitPacker but with more branch instructions (and less efficient).
+3. ``VectorFastPFOR`` -- is the vector equivalent for [FastPFOR](https://github.com/lemire/JavaFastPFOR/blob/master/src/main/java/me/lemire/integercompression/FastPFOR.java). Uses a 256 BLOCK_SIZE.
 
 Requirements
 -----------------

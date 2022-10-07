@@ -36,7 +36,7 @@ java --add-modules jdk.incubator.vector -cp ./build/libs/*:./libs/*:./examples E
 
 Performance (using JMH)
 ----------------------
-The VectorFastPFOR algorithm compresses integers in blocks of 256 integers. The below jmh data compares the throughput of the vector implementation against the default (non-vectorized implementation). Overall, we see a gain ranging from 4x to 10x for the vector implementation.
+The VectorFastPFOR algorithm compresses integers in blocks of 256 integers. The below jmh data compares the throughput of the vector implementation against the default (non-vectorized implementation). Overall, we see gains ranging from 4x to 10x for the vector implementation.
 
 ```
 Benchmark              bitWidth  Cnt   Score              Error                Err %  Units   Vector Speedup
